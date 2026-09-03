@@ -1,0 +1,44 @@
+# =====================================================
+# AIMS — Blok prestasi untuk .htaccess (root laman)
+# GABUNGKAN blok ini ke DALAM fail .htaccess sedia ada anda
+# (JANGAN buang peraturan RewriteRule / lain yang sudah ada).
+# Kesan: mampatan gzip untuk HTML/CSS/JS + cache pelayar untuk
+# imej/fail statik → muat turun lebih kecil & pantas, terutama
+# untuk lawatan berulang.
+# =====================================================
+
+# ---- 1) Mampatan gzip / deflate ----
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript text/javascript
+  AddOutputFilterByType DEFLATE application/json application/xml image/svg+xml
+  AddOutputFilterByType DEFLATE application/manifest+json
+</IfModule>
+
+# ---- 2) Cache pelayar (Expires) ----
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg      "access plus 1 month"
+  ExpiresByType image/png       "access plus 1 month"
+  ExpiresByType image/gif       "access plus 1 month"
+  ExpiresByType image/webp      "access plus 1 month"
+  ExpiresByType image/svg+xml   "access plus 1 month"
+  ExpiresByType image/x-icon    "access plus 1 year"
+  ExpiresByType text/css        "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType font/woff       "access plus 1 year"
+  ExpiresByType font/woff2      "access plus 1 year"
+</IfModule>
+
+# ---- 3) Cache-Control tambahan untuk aset statik ----
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|css|js|woff|woff2|ttf)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
+
+# Nota:
+# - Fail .php (halaman & AJAX) TIDAK di-cache (sentiasa segar) — betul.
+# - Jika sesetengah modul tiada di hosting anda (mod_expires/mod_headers),
+#   Apache akan abaikan blok berkenaan (dibungkus <IfModule>) — selamat.
+# - Selepas gabung, muat semula laman & tekan Ctrl+Shift+R sekali.

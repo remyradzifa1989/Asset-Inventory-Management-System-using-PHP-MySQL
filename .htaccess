@@ -1,0 +1,40 @@
+# =====================================================
+# AIMS — .htaccess (prestasi + halaman ralat berjenama)
+# LOKALHOST: aplikasi di /aims/ → guna prefix /aims/ di bawah.
+# PRODUKSI (aims.kowamas.com root): tukar /aims/ kepada /
+# (cth: ErrorDocument 404 /404.php)
+# =====================================================
+
+# ---- Halaman ralat berjenama ----
+ErrorDocument 403 /aims/403.php
+ErrorDocument 404 /aims/404.php
+ErrorDocument 500 /aims/500.php
+
+# ---- Mampatan gzip / deflate ----
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript text/javascript
+  AddOutputFilterByType DEFLATE application/json application/xml image/svg+xml application/manifest+json
+</IfModule>
+
+# ---- Cache pelayar (Expires) ----
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg    "access plus 1 month"
+  ExpiresByType image/png     "access plus 1 month"
+  ExpiresByType image/gif     "access plus 1 month"
+  ExpiresByType image/webp    "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/x-icon  "access plus 1 year"
+  ExpiresByType text/css              "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType font/woff  "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# ---- Cache-Control aset statik ----
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|css|js|woff|woff2|ttf)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
