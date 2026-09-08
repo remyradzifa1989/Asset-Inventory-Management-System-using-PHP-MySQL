@@ -75,3 +75,54 @@ aims/
 - `htmlspecialchars()` output escaping
 - Delete `auth/reset_passwords.php` after first run
 - Change default passwords immediately in production
+
+
+
+<img width="1031" height="793" alt="Screenshot 2026-08-07 162133" src="https://github.com/user-attachments/assets/49547182-d545-4bc8-93ed-46738b6ce27c" />
+
+<img width="1892" height="891" alt="Screenshot 2026-08-07 162155" src="https://github.com/user-attachments/assets/6cc1ab02-1205-4cf3-aa7c-7d9cac777b4c" />
+
+<img width="1884" height="892" alt="Screenshot 2026-08-07 162215" src="https://github.com/user-attachments/assets/7d1ed976-1aad-41c8-a9ed-6d9f222702aa" />
+
+<img width="1896" height="877" alt="Screenshot 2026-08-07 162233" src="https://github.com/user-attachments/assets/a2d5ca57-e28a-4820-a593-f1c625fca90b" />
+
+<img width="1896" height="885" alt="Screenshot 2026-08-07 162248" src="https://github.com/user-attachments/assets/42eb436f-70ce-484d-acc6-cf6ee57df509" />
+
+<img width="1895" height="892" alt="Screenshot 2026-08-07 162305" src="https://github.com/user-attachments/assets/272756ad-b382-46d0-a57c-0d5bd46f14f5" />
+
+<img width="1872" height="893" alt="Screenshot 2026-08-07 162319" src="https://github.com/user-attachments/assets/82f35218-b0f1-4232-9d50-359d97368901" />
+
+<img width="1895" height="889" alt="Screenshot 2026-08-07 162332" src="https://github.com/user-attachments/assets/f6d8b69d-7edd-4471-ae6b-8708f81aca30" />
+
+<img width="1887" height="878" alt="Screenshot 2026-08-07 162348" src="https://github.com/user-attachments/assets/16fe1708-6b9f-4522-97d0-2a7d8bac7bdb" />
+
+<img width="1882" height="890" alt="Screenshot 2026-08-07 162407" src="https://github.com/user-attachments/assets/61d18ee5-3773-4591-84eb-3bd9a9112be4" />
+
+<img width="1892" height="881" alt="Screenshot 2026-08-07 162423" src="https://github.com/user-attachments/assets/e0dcd1b5-719d-449d-8152-4c69bf0ab232" />
+
+<img width="1900" height="889" alt="Screenshot 2026-08-07 162437" src="https://github.com/user-attachments/assets/22aabe3c-6d91-4a35-b12e-fd9569bd1b5f" />
+
+<img width="1881" height="893" alt="Screenshot 2026-08-07 162454" src="https://github.com/user-attachments/assets/700daa12-dffa-4ce6-8234-affaa8010f98" />
+
+<img width="1890" height="892" alt="Screenshot 2026-08-07 162814" src="https://github.com/user-attachments/assets/dd889320-8e80-4cc6-9e25-38b8a7805fef" />
+
+<img width="1908" height="894" alt="Screenshot 2026-08-07 162958" src="https://github.com/user-attachments/assets/be129af7-5795-44d4-bff6-59af1856d5b8" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
